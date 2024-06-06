@@ -11,7 +11,9 @@
 	font-display: swap;
 	src: local('Pretendard Regular'), url(./woff2/Pretendard-Regular.woff2) format('woff2'), url(./woff/Pretendard-Regular.woff) format('woff');
 }
-body {
-    width: 1260px;
-    
+#wrap {
+	min-width: 1260px;
+}
+.wrapper {
+	min-width: 1260px;
 }
