@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6, strong {
     font-size: inherit; /* 상위요소에서 정의된대로 상속받아라 inherit */
     font-weight: inherit;
 }
-em { /* 글자기울임 취소 */
+em, address { /* 글자기울임 취소 */
     font-style: normal;
 }
 a { /* 파란색에 underline 취소 */
@@ -21,4 +21,13 @@ a { /* 파란색에 underline 취소 */
 }
 img { /* 이미지를 a태그로 감싸면 이미지에 파란색 테두리가 생겼었음. 그걸 삭제 */
     border: 0;
+}
+button {
+    background-color: transparent; /* 배경 투명 */
+    border: 0;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
 }

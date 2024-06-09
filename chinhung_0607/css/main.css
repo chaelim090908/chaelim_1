@@ -15,5 +15,161 @@
 	min-width: 1260px;
 }
 .wrapper {
-	min-width: 1260px;
+	width: 1260px;
+	margin: 0 auto;
+}
+html, body {
+	color: #3d3d3d;
+	font-family: "Pretendard", sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	letter-spacing: 0;
+	line-height: 1.4;
+}
+header .wrapper {
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+header h1 a img {
+	padding: 33px 0 0 0;
+}
+header .gnb {
+	padding: 40px 0 0 0;
+}
+header .gnb ul {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 22px;
+}
+
+header .gnb ul li a {
+	padding: 0 22px;
+}
+
+.visual {
+	background: url(../images/main.png) no-repeat center center / cover;
+	height: 700px;
+	color: #fff;
+	letter-spacing: -0.05em;
+	text-align: right;
+}
+.visual .wrapper {
+	padding: 132px 85px 0 0;
+}
+.visual h2 {
+	font-size: 53px;
+	font-weight: 800;
+	letter-spacing: -0.05em;
+}
+.visual p {
+	margin: 3px 0 0 0;
+	letter-spacing: -0.05em;
+}
+.biz {
+	text-align: center;
+	margin: 135px 0 159px 0;
+}
+.biz h2 {
+	color: #1d1d1d;
+	font-size: 40px;
+	font-weight: 800;
+}
+.biz .sub {
+	margin: 0 0 65px 0;
+}
+.biz .list ul {
+	display: flex;
+	justify-content: space-between;
+}
+.biz .list ul li {
+	width: 297px;
+}
+.biz .list ul li a {
+
+}
+.biz .list ul li a h3 {
+	margin: 25px 0 5px 0;
+	color: #1d1d1d;
+	font-size: 25px;
+	letter-spacing: -0.05em;
+}
+.biz .list ul li a .txt {
+	line-height: 1.4;
+	padding: 0 7px 28px 7px;
+}
+.biz .list ul li a .more {
+	border: 1px solid #ccc;
+	height: 44px;
+	margin: 0 10px;
+	padding: 11px 0 0 0;
+}
+.pre {
+	background: url(../images/haering.png) no-repeat center center / cover;
+	height: 1071px;
+	padding: 177px 0 0 0;
+	color: #fff;
+}
+.pre h3 {
+	color: #2b38ec;
+	font-size: 17px;
+	letter-spacing: -0.05em;
+	padding: 0 0 0 7px;
+}
+.pre .txt {
+	font-size: 40px;
+	font-weight: 800;
+	line-height: 1.2;
+	margin: 0 0 45px 0;
+}
+.pre div a {
+	border: 1px solid #fff;
+	padding: 10px 40px;
+	letter-spacing: -0.05em;
+}
+footer {
+	height: 253px;
+	background-color: #151515;
+	color: rgba(255,255,255,0.8);
+}
+footer .privacy {
+	display: flex;
+	align-items: center;
+}
+footer .privacy ul {
+	padding: 0 15px 0 0;
+	margin: 30px 0;
+}
+footer .privacy .info {
+	font-weight: 800;
+}
+footer .f_info {
+	border-top: 1px solid rgba(255,255,255,0.1);
+	padding: 34px 0 0 0;
+}
+footer .f_info span {
+	padding: 0 17px 0 0;
+}
+footer .f_info address {
+	margin: 15px 0 40px 0;
+}
+footer .copy {
+	color: rgba(255,255,255,0.6);
+}
+footer .wrapper {
+	position: relative;
+}
+footer .family {
+	position: absolute;
+	right: 0;
+	top: 109px;
+}
+footer .family button {
+	border: 1px solid rgba(255,255,255,0.2);
+	width: 200px;
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 34px;
 }
