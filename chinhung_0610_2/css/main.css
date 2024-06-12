@@ -144,3 +144,39 @@ footer {
     color: rgba(255,255,255,0.8);
     padding: 0 0 41px 0;
 }
+footer .f_nav ul {
+    display: flex;
+    padding:  28px 0;
+}
+footer .f_nav ul li {
+    margin: 0 30px 0 0;
+}
+footer .f_nav ul li.pers {
+    font-weight: 800;
+}
+footer .f_info {
+    padding: 30px 0 0 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+
+}
+footer .f_info span {
+    margin: 0 34px 0 0;
+}
+footer .f_info address {
+    margin: 16px 0 44px 0;
+}
+footer .copy {
+    color: rgba(255,255,255,0.6);
+}
+footer .wrapper {
+    position: relative;
+}
+footer .family button {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    background: url(../images/family_ico.png) no-repeat right 34px center;
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 18px 129px 18px 33px;
+    cursor: pointer;
+}
