@@ -8,7 +8,7 @@ li { /* ul li에 앞에 동그라미 삭제 */
     list-style: none;
 }
 /* 글자크기가 커지고, 두꺼워지는 스타일 삭제 */
-h1, h2, h3, h4, h5, h6, strong {
+h1, h2, h3, h4, h5, h6, strong, address {
     font-size: inherit; /* 상위요소에서 정의된대로 상속받아라 inherit */
     font-weight: inherit;
 }
