@@ -50,3 +50,17 @@
 .tech span {color: #1D1D1D; font-size: 30px; font-weight: 600; margin: 76px 0 0 0; display: block;}
 .tech h2 {color: #1d1d1d; font-size: 40px; font-weight: 600; line-height: 1.2; margin: 5px 0 20px 0;}
 .tech p {width: 511px; margin-bottom: 39px;}
+.tech .inner a {background: url(../images/tec_more.svg) no-repeat right 23px center;
+    border: 1px solid #3d3d3d; border-radius: 30px; width: 200px; height: 45px; display: block; text-align: center; padding: 12px 30px 0 0;}
+
+@media screen and (max-width:640px){
+    .tech {margin: 55px 0 100px 0;}
+    .tech .wrapper {flex-wrap: wrap-reverse;}
+    .tech span {font-size: 16px; margin: 15px 0 0 0;}
+    .tech h2 {font-size: 20px; margin: 0 0 7px 0;}
+    .tech .photo img {width: 100%; overflow: hidden;}
+    .tech p {width: auto; margin-bottom: 21px;}
+
+    .tech .inner a {background: url(../images/tec_more.svg) no-repeat right 28px center;
+    border: 1px solid #3d3d3d; border-radius: 30px; width: 200px; height: 45px; display: block; text-align: center; padding: 12px 30px 0 0; font-size: 13px;}
+}
