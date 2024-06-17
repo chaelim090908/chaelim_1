@@ -15,11 +15,15 @@ html, body {
     width: 1260px;
     margin: 0 auto; /* 가운데 정렬 */
 }
+@media screen and (max-width:1300px){ /* 넓이 1300px이 넘으면 좌우 여백 20px로 가운데 정렬*/
+    #wrap{min-width: 1300px;}
+    .wrapper {margin: 0 20px;}
+}
 
 @media screen and (max-width:640px){
     html, body {font-size: 13px;}
     #wrap {min-width: 100%;} /* 최소넓이 꽉차게 */
-    .wrapper {width: auto;
+    .wrapper {width: auto; 
         /* block요소의 속성대로 알아서주기 
         100%를 주면 margin이 좌우로 20px씩 들어가서 
         실제 넓이가 100% + 40px로 사이즈가 넘치게됨.. 

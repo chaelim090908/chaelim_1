@@ -29,7 +29,7 @@
 
 .pure {background: url(../images/pure_bg.png) no-repeat center center / cover; color: rgba(255,255,255,0.8); height: 600px; text-align: center; padding: 122px 0 0 0; margin: 123px 0 116px 0;}
 .pure h2 {color: #fff; font-size: 40px; font-weight: 600; letter-spacing: 0; line-height: 1.2;}
-.pure ul {margin: 32px 166px 0 166px; color: #fff; font-weight: 600;}
+.pure ul {margin: 32px 0 0 0; padding: 0 166px; color: #fff; font-weight: 600;}
 .pure ul li {display: flex; justify-content: space-between; font-size: 20px;}
 .pure ul li a {width: 214px; height: 214px; border: 1px solid #333333; border-radius: 20px;}
 .pure ul li a.icon1 {background: url(../images/pure_ico1.svg) no-repeat top 40px center; display: flex; flex-direction: column-reverse; padding-bottom: 25px;}
@@ -38,13 +38,15 @@
 .pure ul li a.icon4 {background: url(../images/pure_ico4.svg) no-repeat top 40px center; display: flex; flex-direction: column-reverse; padding-bottom: 25px;}
 
 @media screen and (max-width:640px){
-    .pure {color: rgba(255,255,255,0.8); text-align: center; padding: 34px 0 39px 0; margin: 55px 0;}
-    .pure h2 {color: #fff; font-size: 20px; margin-bottom: 9px;}
-    .pure ul {margin: 10px 0; gap: 16px;}
-    .pure ul li {width: calc(50% - 8px); height: 152px; flex-wrap: wrap; font-size: 16px;}
-
-    .pure ul li a.icon1 {background: url(../images/pure_ico1.svg) no-repeat top 25px center;}
-    .pure ul li a.icon2 {background: url(../images/pure_ico2.svg) no-repeat top 25px center; display:}
-    .pure ul li a.icon3 {background: url(../images/pure_ico3.svg) no-repeat top 25px center; display:}
-    .pure ul li a.icon4 {background: url(../images/pure_ico4.svg) no-repeat top 25px center; display:}
+    .pure {padding: 34px 0 39px 0; margin: 55px 0; height: auto; /* 기존에 선언된 높이값을 해제 */}
+    .pure h2 {font-size: 20px; margin-bottom: 9px;}
+    .pure ul {margin: 11px 0; padding: 0;}
+    .pure ul li {display: flex; flex-wrap: wrap; font-size: 16px; gap: 16px;}
+    .pure ul li a {width: calc(50% - 8px);}
 }
+
+.tech {margin: 116px 0 200px 0;}
+.tech .wrapper {display: flex; justify-content: space-between;}
+.tech span {color: #1D1D1D; font-size: 30px; font-weight: 600; margin: 76px 0 0 0; display: block;}
+.tech h2 {color: #1d1d1d; font-size: 40px; font-weight: 600; line-height: 1.2; margin: 5px 0 20px 0;}
+.tech p {width: 511px; margin-bottom: 39px;}
