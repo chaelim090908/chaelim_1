@@ -17,4 +17,45 @@
 .test_1 ul li a h2 {color: #fff; font-size: 25px; font-weight: 800; position: absolute; left: 27px; top: 115px;}
 .test_1 ul li a span {position: absolute; left: 27px; top: 145px; width: 230px; display: block;}
 
+@media screen and (max-width:640px){
+    .test_1 {margin: 29px 0 0 0;}
+    .test_1 ul {flex-wrap: wrap; gap: 16px;}
+    .test_1 ul li {width: calc(50% - 8px);}
+    .test_1 ul li a {color: rgba(61,61,61,0.8);}
+    .test_1 ul li a .photo {height: 82px; border-radius: 10px;}
+
+    .test_1 ul li a h2 {color: #1d1d1d; font-size: 16px; position: relative; left: auto; top: auto;}
+    .test_1 ul li a span {position: relative; left: auto; top: auto; width: 100%; display: block;}
+}
+
 /* 다른 버전 */
+
+.test_2 {margin: 175px 0 0 0;}
+.test_2 ul {display: flex; justify-content: space-between;}
+.test_2 ul li {width: calc(25% - 18px); border-radius: 20px; overflow: hidden; /* 이미지가 넘치는 것 자르기 */ transition: 0.5s;}
+.test_2 ul li a {height: 297px; display: block; color: rgba(255,255,255,0.8);}
+.test_2 ul li h2 {color: #fff; font-size: 25px; font-weight: 800; padding: 115px 0 0 27px;}
+.test_2 ul li span {padding: 0 0 0 27px; width: 230px; display: block;}
+
+.test_2 ul li.test2_1 {background-position: center center; background-repeat: no-repeat; background-size: cover; object-fit: cover;}
+.test_2 ul li.test2_2 {background: background-position: center center; background-repeat: no-repeat; background-size: cover; object-fit: cover;}
+.test_2 ul li.test2_3 {background-position: center center; background-repeat: no-repeat; background-size: cover; object-fit: cover;}
+.test_2 ul li.test2_4 {background-position: center center; background-repeat: no-repeat; background-size: cover; object-fit: cover;}
+
+.test_2 ul li.test2_1 a {background-image: url(../images/test1_1.png);}
+.test_2 ul li.test2_2 a {background-image: url(../images/test1_2.png);}
+.test_2 ul li.test2_3 a {background-image: url(../images/test1_3.png);}
+.test_2 ul li.test2_4 a {background-image: url(../images/test1_4.png);}
+
+.test_2 ul li:hover a {background-size: 120% auto;}
+
+@media screen and (max-width:640px){
+    .test_2 {margin: 90px 0 0 0;}
+    .test_2 ul {display: block;}
+    .test_2 ul li {width: 100%; margin-bottom: 16px;}
+    .test_2 ul li:last-child {margin-bottom: 0;}
+    .test_2 ul li a {border-radius: 0; height: 150px;}
+
+    .test_2 ul li a h2 {padding: 27px 0 0 27px;}
+}
+
