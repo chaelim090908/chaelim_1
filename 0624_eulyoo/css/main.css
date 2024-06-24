@@ -1,0 +1,61 @@
+@import url(font.css);
+@import url(default.css);
+@import url(common.css);
+
+.visual {position: relative; /* bnt_prev, bnt_next 정렬의 기준 */}
+.visual ul li {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; /* 이미지 꽉 차게 */
+    height: 900px;
+    color: rgba(255,255,255,0.8);
+}
+.visual ul li.pop_bg1 {background-image: url(../images/visual_bg1.png);}
+.visual ul li.pop_bg2 {background-image: url(../images/visual_bg2.png);}
+.visual ul li.pop_bg3 {background-image: url(../images/visual_bg3.png);}
+
+.visual ul li span {
+    color: rgba(255,255,255,0.05);
+    font-family: 'Eulyoo1945';
+    font-size: 100px;
+    margin: 262px 0 0 53px;
+    display: block;
+}
+.visual ul li h2 {
+    color: #fff;
+    font-family: 'Eulyoo1945';
+    font-size: 100px;
+    margin: -85px 0 4px 105px;
+    display: block;
+}
+.visual ul li p {
+    margin: 0 0 0 126px;
+}
+
+.visual .bnt_prev {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 20px;
+    font-size: 0;
+    line-height: 0;
+    content: "";
+    
+}
+.visual .bnt_prev::after {
+    
+    background-image: url("data:image/svg+xml,%3Csvg width='102' height='22' viewBox='0 0 102 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 20.7802L1.71776 20.3675L0.383038 21.2802H2V20.7802ZM31.2079 1.41273C31.4358 1.25685 31.4942 0.945708 31.3383 0.717765C31.1825 0.489822 30.8713 0.431399 30.6434 0.587273L31.2079 1.41273ZM2 21.2802H102V20.2802H2V21.2802ZM2.28224 21.1929L31.2079 1.41273L30.6434 0.587273L1.71776 20.3675L2.28224 21.1929Z' fill='white' fill-opacity='0.3'/%3E%3C/svg%3E%0A");
+
+}
+
+.visual .bnt_next {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+    height: 20px;
+    font-size: 0;
+    line-height: 0;
+    content: "";
+}
