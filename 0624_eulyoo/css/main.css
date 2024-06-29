@@ -164,8 +164,15 @@
     line-height: 1.2;
     color: #1d1d1d;
 }
+.book .list ul li a:hover h3 {
+    color: #5D331B;
+}
+
 .book .list ul li a span {
     color: rgba(61,61,61,0.8);
+}
+.book .list ul li a:hover span {
+    color: rgba(184,142,106,1);
 }
 
 @media screen and (max-width:640px){
@@ -187,20 +194,15 @@
     .book .txt .more {
         position: relative;
         left: 0;
-        top: 0;
+        top: 4px;
         text-align: right;
     }
     .book .txt .more::before {
-        position: absolute; /* position 값을 갖고 있는 .more을 기준으로 정렬 */
-        right: -15px;
-        bottom: 3px;
-        width: 29px;
-        height: 7px;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: contain;
-        background-image: url("data:image/svg+xml,%3Csvg width='31' height='8' viewBox='0 0 31 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M29 7L29.2909 6.59332L30.5585 7.5L29 7.5L29 7ZM20.3207 1.40668C20.0961 1.24603 20.0442 0.933718 20.2049 0.709116C20.3655 0.484515 20.6779 0.432673 20.9025 0.593324L20.3207 1.40668ZM29 7.5L5.68248e-07 7.5L4.80825e-07 6.5L29 6.5L29 7.5ZM28.7091 7.40667L20.3207 1.40668L20.9025 0.593324L29.2909 6.59332L28.7091 7.40667Z' fill='%23666666'/%3E%3C/svg%3E%0A");
-        content: "";
+        right: -17px;
+        bottom: 11px;
+        width: 28px;
+        height: 6px;
+        background-image: url("data:image/svg+xml,%3Csvg width='30' height='8' viewBox='0 0 30 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M28 7L28.2976 6.59823L29.5149 7.5L28 7.5L28 7ZM19.6032 1.40176C19.3813 1.23739 19.3347 0.924256 19.4991 0.702367C19.6634 0.480479 19.9766 0.433858 20.1985 0.598237L19.6032 1.40176ZM28 7.5L5.68248e-07 7.5L4.80825e-07 6.5L28 6.5L28 7.5ZM27.7024 7.40176L19.6032 1.40176L20.1985 0.598237L28.2976 6.59823L27.7024 7.40176Z' fill='%23666666'/%3E%3C/svg%3E%0A");
     }
     
     .book .list {
@@ -209,19 +211,66 @@
     .book .list ul li {
         width: 160px;
     }
+    .book .list ul li .photo img {
+        width: 100%;
+    }
     .book .list ul li a h3 {
-        white-space: nowrap; /* 한줄제한 */
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: block;
-    
-        font-family: 'Eulyoo1945';
-        font-size: 22px;
-        line-height: 1.2;
-        color: #1d1d1d;
+        font-size: 16px;
     }
-    .book .list ul li a span {
-        color: rgba(61,61,61,0.8);
-    }
+}
 
+.interview {
+    background-color: rgba(130,139,115,0.2);
+    height: 960px;
+    margin-top: 160px;
+}
+.interview .wrapper {
+    position: relative; /* more 정렬의 기준 */
+}
+.interview .txt {
+    text-align: center;
+    padding: 71px;
+    margin: 0 0 105px 0;
+}
+
+.interview .txt h2 {
+    color: #1d1d1d;
+    font-family: 'Eulyoo1945';
+    font-size: 40px;
+    line-height: 1.2;
+}
+.interview .txt span {
+    color: rgba(61,61,61,0.8);
+}
+.interview .txt .more {
+    position: absolute;
+    left: 50%;
+    top: 155px;
+    transform: translate(-50%, 0);
+}
+.interview .txt .more::before {
+    position: absolute; /* position 값을 갖고 있는 .more을 기준으로 정렬 */
+    right: -15px;
+    bottom: 3px;
+    width: 29px;
+    height: 7px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='31' height='8' viewBox='0 0 31 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M29 7L29.2909 6.59332L30.5585 7.5L29 7.5L29 7ZM20.3207 1.40668C20.0961 1.24603 20.0442 0.933718 20.2049 0.709116C20.3655 0.484515 20.6779 0.432673 20.9025 0.593324L20.3207 1.40668ZM29 7.5L5.68248e-07 7.5L4.80825e-07 6.5L29 6.5L29 7.5ZM28.7091 7.40667L20.3207 1.40668L20.9025 0.593324L29.2909 6.59332L28.7091 7.40667Z' fill='%23666666'/%3E%3C/svg%3E%0A");
+    content: "";
+}
+
+.interview .list ul {
+    display: flex;
+    justify-content: space-between;
+}
+.interview .list ul li {
+    width: 404px;
+}
+
+
+
+footer {
+    margin: 1000px 0 0 0;
 }
