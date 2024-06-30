@@ -276,6 +276,10 @@
     height: 431px;
     position: relative; /* a 정렬의 기준 */
 }
+.interview .list ul li:hover {
+    
+}
+
 .interview .list ul li:first-child,
 .interview .list ul li:last-child {
     border-radius: 80px 0 30px 0;
@@ -296,7 +300,7 @@
     background: url(../images/interview3.png) no-repeat center center / cover;
     filter: grayscale(0.8);
 }
-.interview .list ul li:hover {
+.interview .list ul li a:hover {
     filter: grayscale(0);
 }
 
@@ -313,6 +317,9 @@
 .interview .list ul li a h3 {
     font-size: 40px;
 }
+.interview .list ul li:hover a h3 {
+    
+}
 .interview .list ul li a .more {
     position: absolute; /* a를 정렬의 기준으로 함 */
     right: 42px;
@@ -327,13 +334,17 @@
     background-image: url("data:image/svg+xml,%3Csvg width='35' height='35' viewBox='0 0 35 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 16.75C0.723858 16.75 0.5 16.9739 0.5 17.25C0.5 17.5261 0.723858 17.75 1 17.75V16.75ZM1 17.75H34.5V16.75H1V17.75Z' fill='white'/%3E%3Cpath d='M18.25 1C18.25 0.723858 18.0261 0.5 17.75 0.5C17.4739 0.5 17.25 0.723858 17.25 1L18.25 1ZM18.25 34.5L18.25 1L17.25 1L17.25 34.5L18.25 34.5Z' fill='white'/%3E%3C/svg%3E%0A");
 }
 
-.interview .list ul li:hover a {
+.interview .list ul li a:hover .span {
     position: absolute;
     left: 0;
     top: 307px;
     background-color: #828B73;
     width: 340px;
     height: 164px;
+    background-image: none;
+    font-family: 'Pretendard';
+    font-size: 15px;
+    line-height: 1.2;
 }
 
 
