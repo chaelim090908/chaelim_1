@@ -226,31 +226,31 @@
 .interview .wrapper {
     position: relative; /* more 정렬의 기준 */
 }
-.interview .txt {
+.interview .interview_txt {
     text-align: center;
     margin: 0 0 105px 0;
     padding: 71px 0 0 0;
 }
 
-.interview .txt h2 {
+.interview .interview_txt h2 {
     color: #1d1d1d;
     font-family: 'Eulyoo1945';
     font-size: 40px;
     line-height: 1.2;
 }
-.interview .txt span {
+.interview .interview_txt span {
     color: rgba(61,61,61,0.8);
 }
-.interview .txt .more {
+.interview .interview_txt .more {
     position: absolute;
     left: 50%;
     top: 155px;
     transform: translate(-50%, 0);
 }
-.interview .txt .more:hover {
+.interview .interview_txt .more:hover {
     color: #962C25;
 }
-.interview .txt .more::before {
+.interview .interview_txt .more::before {
     position: absolute; /* position 값을 갖고 있는 .more을 기준으로 정렬 */
     right: -15px;
     bottom: 3px;
@@ -262,7 +262,7 @@
     background-image: url("data:image/svg+xml,%3Csvg width='31' height='8' viewBox='0 0 31 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M29 7L29.2909 6.59332L30.5585 7.5L29 7.5L29 7ZM20.3207 1.40668C20.0961 1.24603 20.0442 0.933718 20.2049 0.709116C20.3655 0.484515 20.6779 0.432673 20.9025 0.593324L20.3207 1.40668ZM29 7.5L5.68248e-07 7.5L4.80825e-07 6.5L29 6.5L29 7.5ZM28.7091 7.40667L20.3207 1.40668L20.9025 0.593324L29.2909 6.59332L28.7091 7.40667Z' fill='%23666666'/%3E%3C/svg%3E%0A");
     content: "";
 }
-.interview .txt .more:hover::before {
+.interview .interview_txt .more:hover::before {
     background-image: url("data:image/svg+xml,%3Csvg width='31' height='8' viewBox='0 0 31 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M29 7L29.2909 6.59332L30.5585 7.5L29 7.5L29 7ZM20.3207 1.40668C20.0961 1.24603 20.0442 0.933718 20.2049 0.709116C20.3655 0.484515 20.6779 0.432673 20.9025 0.593324L20.3207 1.40668ZM29 7.5L5.68248e-07 7.5L4.80825e-07 6.5L29 6.5L29 7.5ZM28.7091 7.40667L20.3207 1.40668L20.9025 0.593324L29.2909 6.59332L28.7091 7.40667Z' fill='%23962C25'/%3E%3C/svg%3E%0A");
 }
 
@@ -295,7 +295,7 @@
     background: url(../images/interview3.png) no-repeat center center / cover;
     filter: grayscale(0.8);
 }
-.interview .list ul li a:hover {
+.interview .list ul li.on a:hover {
     filter: grayscale(0);
 }
 
@@ -304,9 +304,21 @@
     height: 431px;
     padding: 311px 0 0 42px;
     display: block;
+}
+.interview .list ul li a .txt {
     color: #fff;
     font-family: 'Eulyoo1945';
     line-height: 1.2;
+}
+.interview .list ul li.on a .txt {
+    position: absolute;
+    left: 0;
+    top: 314px;
+    width: 340px;
+    height: 164px;
+    content: "";
+    background-color: #828B73;
+    border-radius: 0 80px 0 30px;
 }
 .interview .list ul li a span {
     font-size: 30px;
@@ -326,19 +338,6 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url("data:image/svg+xml,%3Csvg width='35' height='35' viewBox='0 0 35 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 16.75C0.723858 16.75 0.5 16.9739 0.5 17.25C0.5 17.5261 0.723858 17.75 1 17.75V16.75ZM1 17.75H34.5V16.75H1V17.75Z' fill='white'/%3E%3Cpath d='M18.25 1C18.25 0.723858 18.0261 0.5 17.75 0.5C17.4739 0.5 17.25 0.723858 17.25 1L18.25 1ZM18.25 34.5L18.25 1L17.25 1L17.25 34.5L18.25 34.5Z' fill='white'/%3E%3C/svg%3E%0A");
-}
-
-.interview .list ul li a:hover span {
-    position: absolute;
-    left: 0;
-    top: 307px;
-    background-color: #828B73;
-    width: 340px;
-    height: 164px;
-    background-image: none;
-    font-family: 'Pretendard';
-    font-size: 15px;
-    line-height: 1.2;
 }
 
 
