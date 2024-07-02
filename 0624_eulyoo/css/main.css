@@ -117,6 +117,7 @@
     font-family: 'Eulyoo1945';
     font-size: 40px;
     line-height: 1.2;
+    margin: 0 0 5px 0;
 }
 .book .txt span {
     margin: 0 0 25px 0;
@@ -237,6 +238,7 @@
     font-family: 'Eulyoo1945';
     font-size: 40px;
     line-height: 1.2;
+    margin: 0 0 5px 0;
 }
 .interview .interview_txt span {
     color: rgba(61,61,61,0.8);
@@ -310,6 +312,12 @@
     font-family: 'Eulyoo1945';
     line-height: 1.2;
 }
+.interview .list ul li a .txt span {
+    font-size: 22px;
+}
+.interview .list ul li a .txt p {
+    display: none;
+}
 .interview .list ul li.on a .txt {
     position: absolute;
     left: 0;
@@ -320,6 +328,48 @@
     background-color: #828B73;
     border-radius: 0 80px 0 30px;
 }
+.interview .list ul li.on a .txt span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 30px 0 0 138px;
+}
+.interview .list ul li.on a .txt .more {
+    position: absolute;
+    left: 20px;
+    top: 130px;
+    width: 72px;
+    height: 18px;
+    font-size: 15px;
+    line-height: 18px;
+    background-image: none;
+    font-family: 'Pretendard';
+}
+.interview .list ul li.on a .txt h3 {
+    padding: 10px 0 0 19px;
+    margin: 0 0 7px 0;
+}
+
+.interview .list ul li.on a .txt p {
+    display: block;
+    font-family: 'Pretendard';
+    line-height: 1.2;
+    width: calc(100% - 55px);
+    padding: 0 0 0 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    height: 54px;
+    word-break: break-all; 
+}
+
+
+
+
+
+
+
+
 .interview .list ul li a span {
     font-size: 30px;
 }
