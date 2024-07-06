@@ -1,0 +1,46 @@
+/*
+    오답노트 겸용으로 사용
+
+    - html
+    
+    body 태그 바로 아래에 <div id="wrap"> 사용 
+
+    main - .visual 에 <div class="tit"> 굳이 사용하지 않아도 됨
+    > 나뉠 구간이 있는 것도 아니고 필요하다면 .visual 에 요소를 추가
+    main - .biz ul li a .more > span 태그
+    > a 태그 안에 있는 버튼 외형일 뿐이라 (a 영역 아니면 전부 선택됨)
+      크게 필요 없음
+    main - .brand 에도 영역이 나뉘어져 있지 않으므로 tit로 묶을 필요 없음
+
+    
+
+    - main.css
+    
+    header .logo a 값에 해당 header .logo 에 줬던 값을 적용
+    > a 태그에 직접 클릭하면 이동할 것이기 때문
+    logo 이미지는 ::before 태그를 사용하여 줌
+    header .gnb ul li가 아닌 a 태그에 직접 line-height 값을 적용시킴
+    > a 영역으로 눌릴 것
+    header .gnb ul li a 에 font-size와 함께 color 값도 한번에 적용시키기
+
+    .visual 태그에 .container 적용 X
+    .visual .tit이 아닌 .visual 태그에 직접 글씨 적용값을 부여함
+    .container .visual .tit, h2 영역에 margin으로 나눠서 여백값을 지정하지 않고 tit 영역에 한번에 줌
+    .container .visual .tit 에 부여한 padding 값은 h2 영역에 부여해도 O - p 태그의 여백도 한번에 부여함
+
+    .biz .tit 의 컬러값은 common.css에 기본으로 상속받는 것
+    .biz .list ul li a 값이 .biz 태그 가장 아래에 있었음 - 순서 주의
+    .biz .list ul li a .photo 에 height 값을 지정하지 않아도 불러온 사진+li에서 넓이를 지정했기 때문에 기본적으로 비율이 맞춰져 있음
+    .biz .list ul li a .photo img 태그에 object-fit:cover; 를 사용하여 사진 영역에 이상이 없도록 주의
+    ** object-fit : 이미지나 비디오 등의 대체 요소의 콘텐츠가 사용된 높이와 너비에 따라 설정된 컨테이너인 부모 요소에 어떻게 맞춰져야 하는지를 지정
+       object-fit: cover; : 이미지나 비디오가 부모 요소 내에 비율을 유지하면서 한 쪽 축을 꽉 차게 늘려서 배치됩니다. 부모 요소의 어느 한쪽에 잘릴 수 있습니다.
+       * 출처 : https://codingeverybody.kr/css-object-fit-%EC%86%8D%EC%84%B1/
+    .biz .list ul li a strong 이 아닌 block 요소인 span태그를 사용하면 padding에 좌우 여백을 주지 않아도 딱 맞게 들어감
+    .biz .list ul li a p 태그가 사용되었다면 여백값을 그곳에 줘도 상관 없지만 굳이 불러낼 필요가 없기에
+    이미 사용된 .more 값에 margin을 부여하여 여백을 줌
+
+    .brand p 값에 line-height : 1.1; 부여하기
+    해당 태그 뿐 아니라 line-height 값이 변경되면 잊지 않고 값을 주기
+
+    footer .f_nav 에 안전하게 padding으로 여백값 부여하기
+*/

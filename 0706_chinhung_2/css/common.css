@@ -1,0 +1,26 @@
+html, body {
+    color: #3d3d3d;
+    font-family: 'Pretendard', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.4;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+
+#wrap {
+    min-width: 1300px;
+    /* 브라우저의 최소 넓이값 min-width !! */
+}
+.wrapper {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1300px){
+    /* 만약 브라우저 넓이가 1300px 이하가 될 경우 좌우에 여백 20px씩 부여함 */
+    .wrapper {
+        margin: 0 20px;
+    }
+}
