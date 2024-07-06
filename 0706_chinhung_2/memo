@@ -8,7 +8,7 @@
     main - .visual 에 <div class="tit"> 굳이 사용하지 않아도 됨
     > 나뉠 구간이 있는 것도 아니고 필요하다면 .visual 에 요소를 추가
     main - .biz ul li a .more > span 태그
-    > a 태그 안에 있는 버튼 외형일 뿐이라 (a 영역 아니면 전부 선택됨)
+    > a 태그 안에 있는 버튼 외형일 뿐이라 (a 영역 안이면 전부 선택됨)
       크게 필요 없음
     main - .brand 에도 영역이 나뉘어져 있지 않으므로 tit로 묶을 필요 없음
 
@@ -24,9 +24,9 @@
     header .gnb ul li a 에 font-size와 함께 color 값도 한번에 적용시키기
 
     .visual 태그에 .container 적용 X
-    .visual .tit이 아닌 .visual 태그에 직접 글씨 적용값을 부여함
-    .container .visual .tit, h2 영역에 margin으로 나눠서 여백값을 지정하지 않고 tit 영역에 한번에 줌
-    .container .visual .tit 에 부여한 padding 값은 h2 영역에 부여해도 O - p 태그의 여백도 한번에 부여함
+    .visual .tit이 아닌 .visual 태그에 한번에 글씨 적용값을 부여함
+    .visual .tit, h2 영역에 margin으로 나눠서 여백값을 지정하지 않고 tit 영역에 한번에 줌
+    .visual .tit 에 부여한 padding 값은 h2 영역에 부여해도 O - p 태그의 여백도 한번에 부여함
 
     .biz .tit 의 컬러값은 common.css에 기본으로 상속받는 것
     .biz .list ul li a 값이 .biz 태그 가장 아래에 있었음 - 순서 주의
