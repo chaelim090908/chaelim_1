@@ -1,0 +1,181 @@
+@import url(default.css);
+@import url(common.css);
+@import url(font.css);
+
+header {
+    height: 100px;
+}
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo a { /* a태그에 직접주기 */
+    font-size: 0;
+    line-height: 0;
+    width: 143px;
+    height: 37px;
+    position: relative;
+}
+header .logo a::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url(../images/logo.png) no-repeat center center / cover;
+}
+header .gnb ul {
+    display: flex;
+}
+header .gnb ul li a {
+    display: block;
+    line-height: 100px;
+    padding: 0 25px;
+    font-size: 20px;
+    color: #1d1d1d;
+}
+header .gnb ul li a:hover {
+    color: #2623C2;
+    font-weight: 800;
+}
+
+.visual {
+    background: url(../images/visual_bg.png) no-repeat center center / cover;
+    height: 800px;
+    text-align: center;
+    color: rgba(255,255,255,0.8)
+}
+.visual h2 {
+    padding: 339px 0 14px 0;
+    color: #fff;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.biz .tit {
+    text-align: center;
+    margin: 110px 0 58px 0;
+}
+.biz .tit h2 {
+    font-size: 50px;
+    font-weight: 800;
+    color: #1d1d1d;
+    margin-bottom: 8px;
+}
+.biz .list ul {
+    display: flex;
+    justify-content: space-between;
+}
+.biz .list ul li {
+    width: 297px;
+}
+.biz .list ul li a {
+    display: block;
+    text-align: center;
+}
+.biz .list ul li a .photo { /* li가 width 값을 줬으므로 한번 더 줄 필요 없음 */
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+.biz .list ul li a .photo img {
+    /* width, height 값 꽉 차게하기 위해 img에도 주기 */
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+}
+.biz .list ul li a:hover .photo img {
+    transform: scale3d(1.2,1.2,1);
+}
+.biz .list ul li a h3 {
+    color: #1d1d1d;
+    font-size: 25px;
+    font-weight: 800;
+    margin: 17px 0 10px 0;
+}
+.biz .list ul li a .more {
+    /* 언급하지 않아도 될 p태그에 주지 말고 이미 쓰고 있는 .more 태그에 margin 값 적용 */
+    border: 1px solid #e4e4e4;
+    display: block;
+    padding: 12px 0;
+    margin: 26px 0 0 0;
+}
+
+.brand {
+    /* margin 값을 적용하여 위 section과 분리시키기 */
+    background: url(../images/brand_bg.png) no-repeat center center / cover;
+    height: 700px;
+    color: #fff;
+    margin: 110px 0 0 0;
+}
+.brand h2 {
+    padding: 131px 0 5px 0;
+    color: #ADDFFC;   
+}
+.brand p {
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 1.1;
+    margin: 0 0 36px 0;
+}
+.brand a { /* 해당 a 태그에 more Class는 주지X */
+    border: 1px solid rgba(255,255,255,0.8);
+    padding: 12px 27px;
+    display: inline-block;
+}
+
+footer {
+    background-color: #151515;
+    padding: 0 0 166px 0;
+    color: rgba(255,255,255,0.8);
+}
+footer .wrapper {
+    position: relative;
+}
+footer .f_nav { /* 가장 위에 감싸고 있는 f_nav에 값을 주어 적용함 */
+    padding: 35px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+footer .f_nav ul {
+    display: flex;
+}
+footer .f_nav ul li { /* a태그에 직접 주지X 감싸고 있는 li 태그에 여백값 줌 */
+    margin-right: 50px;
+}
+footer .f_nav ul li.privacy {
+    font-weight: 800;
+}
+footer .f_info {
+    margin: 35px 0 55px 0;
+}
+footer .f_info span {
+    margin: 0 50px 18px 0;
+    display: inline-block;
+}
+footer .copyright {
+    color: rgba(255,255,255,0.6);
+}
+footer .family_site {
+    position: absolute;
+    right: 0;
+    top: 110px;
+    width: 205px;
+    height: 41px;
+    border: 1px solid rgba(255,255,255,0.6);
+    padding: 12px 0 12px 15px;
+}
+footer .family_site::before {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    width: 15px;
+    height: 15px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.01563 13.75L3.90625 12.6406L9.04688 7.5L3.90625 2.35938L5.01563 1.25L11.2656 7.5L5.01563 13.75Z' fill='white' fill-opacity='0.8'/%3E%3C/svg%3E%0A");
+    content: "";
+}
