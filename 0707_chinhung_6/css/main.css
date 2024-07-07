@@ -1,0 +1,161 @@
+@import url(default.css);
+@import url(common.css);
+@import url(font.css);
+
+header {
+    height: 100px;
+}
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo a {
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    width: 143px;
+    height: 37px;
+    position: relative;
+}
+header .logo a::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url(../images/logo.png) no-repeat center center / cover;
+}
+header .gnb ul {
+    display: flex;
+}
+header .gnb ul li a {
+    display: block;
+    line-height: 100px;
+    padding: 0 25px;
+    font-size: 20px;
+    color: #1d1d1d;
+}
+header .gnb ul li a:hover {
+    color: #2623C2;   
+    font-weight: 800;
+}
+
+.visual {
+    background: url(../images/visual_bg.png) no-repeat center center / cover;
+    height: 800px;
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+}
+.visual h2 {
+    /* padding, margin 무엇을 주든 상관 없으므로 이미 값을 준 padding에 bottom 여백 줌 */
+    padding: 339px 0 14px 0;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 1.1;
+    color: #fff;
+}
+
+.biz .tit {
+    text-align: center;
+    margin: 110px 0 58px 0;
+}
+.biz .tit h2 {
+    color: #1d1d1d;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 1.1;
+    margin: 0 0 8px 0;
+}
+.biz .list ul {
+    display: flex;
+    justify-content: space-between;
+}
+.biz .list ul li {
+    width: 297px;
+}
+.biz .list ul li a {
+    display: block;
+    text-align: center;
+}
+.biz .list ul li a .photo {
+    /* 이미지 여백 삭제 */
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+.biz .list ul li a .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.biz .list ul li a:hover .photo img {
+    transform: scale3d(1.2,1.2,1);
+}
+.biz .list ul li a h3 {
+    margin: 17px 0 10px 0;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 1.1;
+    color: #1d1d1d;
+}
+.biz .list ul li a .more {
+    display: block;
+    margin: 26px 0 0 0;
+    padding: 12px 0;
+    border: 1px solid #e4e4e4;
+}
+
+.brand {
+    margin: 110px 0 0 0;
+    background: url(../images/brand_bg.png) no-repeat center center / cover;
+    height: 700px;
+    color: #fff;
+}
+.brand h2 {
+    padding: 131px 0 0 0;
+    color: #ADDFFC;
+}
+.brand p {
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 1.1;
+    margin: 5px 0 36px 0;
+}
+.brand a {
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,0.8);
+    padding: 12px 27px;
+}
+
+footer {
+    background-color: #151515;
+    padding: 0 0 166px 0;
+    color: rgba(255,255,255,0.8);
+}
+/* 전체를 감싸고 있는 f_nav에 padding과 border 값 적용 */
+footer .f_nav {
+    padding: 35px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+footer .f_nav ul {
+    display: flex;
+}
+footer .f_nav ul li {
+    margin-right: 50px;
+}
+footer .f_nav ul li.privacy {
+    font-weight: 800;
+}
+footer .f_info {
+    padding: 35px 0 55px 0;
+}
+footer .f_info span {
+    display: inline-block;
+    margin: 0 50px 18px 0;
+}
+footer .copyright {
+    color: rgba(255,255,255,0.6);
+}
